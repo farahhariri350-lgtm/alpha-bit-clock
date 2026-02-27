@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/alpha-bit-clock/static/css/main.c1304018.css",
-    "main.js": "/alpha-bit-clock/static/js/main.687beae4.js",
+    "main.js": "/alpha-bit-clock/static/js/main.48863a50.js",
     "static/js/453.52a753f4.chunk.js": "/alpha-bit-clock/static/js/453.52a753f4.chunk.js",
     "index.html": "/alpha-bit-clock/index.html",
     "main.c1304018.css.map": "/alpha-bit-clock/static/css/main.c1304018.css.map",
-    "main.687beae4.js.map": "/alpha-bit-clock/static/js/main.687beae4.js.map",
+    "main.48863a50.js.map": "/alpha-bit-clock/static/js/main.48863a50.js.map",
     "453.52a753f4.chunk.js.map": "/alpha-bit-clock/static/js/453.52a753f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1304018.css",
-    "static/js/main.687beae4.js"
+    "static/js/main.48863a50.js"
   ]
 }
