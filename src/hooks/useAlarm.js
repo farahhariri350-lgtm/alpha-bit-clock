@@ -6,23 +6,23 @@ const useAlarm = () => {
   const [isAlarmSet, setIsAlarmSet] = useState(false);
   const [isRinging, setIsRinging] = useState(false);
   
-
   const soundPlayed = useRef(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (isAlarmSet && !isRinging) {
         const now = new Date();
+      
         const currentTime = now.toLocaleTimeString('en-GB', { 
           hour: '2-digit', 
           minute: '2-digit' 
         });
         
+    
         if (currentTime === alarmTime) {
-          setIsRinging(true);
-          
-       
           if (!soundPlayed.current) {
+            console.log("المنبه بدأ الآن..."); 
+            setIsRinging(true);
             soundPlayed.current = true;
             playSound('alarm');
           }
@@ -33,13 +33,7 @@ const useAlarm = () => {
     return () => clearInterval(interval);
   }, [isAlarmSet, alarmTime, isRinging]);
 
-  
-  useEffect(() => {
-    if (!isRinging) {
-      soundPlayed.current = false;
-    }
-  }, [isRinging]);
-
+ 
   const stopAlarm = () => {
     stopSounds();       
     setIsRinging(false); 
